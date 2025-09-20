@@ -26,8 +26,9 @@ def logout():
 login_page = st.Page(login, title="Log in", icon=":material/login:")
 logout_page = st.Page(logout, title="Log out", icon=":material/logout:")
 
-home = st.Page("home/Forum.py", title="Fórum", icon=":material/dashboard:", default=True)
-home2 = st.Page("home/Forum_bkp.py", title="Fórum2", icon=":material/dashboard:", default=False)
+principal = st.Page("home/Principal.py", title="Principal", icon=":material/home:", default=False)
+forum = st.Page("home/Forum.py", title="Fórum", icon=":material/dashboard:", default=True)
+# home2 = st.Page("home/Forum_bkp.py", title="Fórum2", icon=":material/dashboard:", default=False)
 programacao = st.Page("home/Programacao.py", title="Programação", icon=":material/calendar_month:")
 
 ods = st.Page("home/Ods.py", title="ODS", icon="🎯")
@@ -61,8 +62,7 @@ curupira = st.Page("tools/Curupira.py", title="Curupira", icon="🪵")
 
 pg = st.navigation(
     {
-        "Home": [home, programacao, ods],
-        # "Programação": [programacao],
+        "Home": [principal,forum, programacao, ods],
         "Agua": [agua_home, agua_equipes, agua_links, agua_coleta_dados],
         "Carbono": [carbono_home, carbono_equipes,carbono_links, carbono_coleta_dados],
         "Tools": [carbon_calc_br, carbon_calc2_br, carbon_calc_fr, carbon_calc2_fr, monitor, simulacao, curupira],
