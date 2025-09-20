@@ -26,8 +26,8 @@ def logout():
 login_page = st.Page(login, title="Log in", icon=":material/login:")
 logout_page = st.Page(logout, title="Log out", icon=":material/logout:")
 
-principal = st.Page("home/Principal.py", title="Principal", icon=":material/home:", default=False)
-forum = st.Page("home/Forum.py", title="Fórum", icon=":material/dashboard:", default=True)
+principal = st.Page("home/Principal.py", title="Principal", icon=":material/home:", default=True)
+forum = st.Page("home/Forum.py", title="Fórum", icon=":material/dashboard:")
 # home2 = st.Page("home/Forum_bkp.py", title="Fórum2", icon=":material/dashboard:", default=False)
 programacao = st.Page("home/Programacao.py", title="Programação", icon=":material/calendar_month:")
 
