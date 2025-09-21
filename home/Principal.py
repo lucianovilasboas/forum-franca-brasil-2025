@@ -37,6 +37,11 @@ with col_b:
 
 st.markdown("---")
 
+st.markdown("🌐 Site oficial: https://francabrasil2025.com/")
+
+st.markdown("---")
+
+
 # ---------------------------------------
 # Métricas resumidas
 # ---------------------------------------
