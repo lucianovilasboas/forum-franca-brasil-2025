@@ -48,14 +48,14 @@ carbono_coleta_dados = st.Page("carbono/Coleta_Dados2.py", title="Coleta de Dado
 
 
 carbon_calc_br = st.Page("tools/Calculadora_Carbono_br.py", title="🇧🇷 Calculadora de Carbono Individual", icon="🧮")
-carbon_calc2_br = st.Page("tools/Calculadora_Carbono2_br.py", title="🇧🇷 Calculadora de Carbono Escolar", icon="🧮")
-
 carbon_calc_fr = st.Page("tools/Calculadora_Carbono_fr.py", title="🇫🇷 Calculadora de Carbono Individual", icon="🧮")
+
+carbon_calc2_br = st.Page("tools/Calculadora_Carbono2_br.py", title="🇧🇷 Calculadora de Carbono Escolar", icon="🧮")
 carbon_calc2_fr = st.Page("tools/Calculadora_Carbono2_fr.py", title="🇫🇷 Calculadora de Carbono Escolar", icon="🧮")
 
-monitor = st.Page("tools/Acoes_Sustentabilidade.py", title="Ações de Sustentabilidade", icon="🌍")
-simulacao = st.Page("tools/Simulacao.py", title="Simulação de Pegada de Carbono", icon="📈")
-curupira = st.Page("tools/Curupira.py", title="Curupira", icon="🪵")
+monitor_sustentabilidade = st.Page("tools/Acoes_Sustentabilidade.py", title="Ações de Sustentabilidade", icon="🌍")
+simulacao_10anos = st.Page("tools/Simulacao.py", title="Simulação de Pegada de Carbono", icon="📈")
+curupira_ia = st.Page("tools/Curupira.py", title="Curupira", icon="🪵")
 
 # history = st.Page("tools/history.py", title="History", icon=":material/history:")
 
@@ -65,7 +65,7 @@ pg = st.navigation(
         "Home": [principal,forum, programacao, ods],
         "Agua": [agua_home, agua_equipes, agua_links, agua_coleta_dados],
         "Carbono": [carbono_home, carbono_equipes,carbono_links, carbono_coleta_dados],
-        "Tools": [carbon_calc_br, carbon_calc2_br, carbon_calc_fr, carbon_calc2_fr, monitor, simulacao],
+        "Tools": [carbon_calc_br, carbon_calc_fr, carbon_calc2_br, carbon_calc2_fr, simulacao_10anos, monitor_sustentabilidade],
     }
 )
     
