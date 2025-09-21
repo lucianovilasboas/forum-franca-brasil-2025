@@ -29,19 +29,19 @@ professors = [
     {"name": "Profa. Gaëlle Busson", "country": "França", "role": "Professora", "bio": "..."},
     {"name": "Profa. Patricia  Darjo", "country": "França", "role": "Diretora", "bio": "..."},
     {"name": "Prof. Luciano Espiridião", "country": "Brasil", "role": "Professor de Informática", "bio": "..."},
-    {"name": "Prof. Pedro Henrique Pereira", "country": "Brasil", "role": "Professor de íngua Portuguesa", "bio": "..."}
+    {"name": "Prof. Pedro Henrique Pereira", "country": "Brasil", "role": "Professor de Língua Portuguesa", "bio": "..."}
 ]
 
 students = [
-    {"name": "Clara Boissinot", "country": "França", "role": "Estudante", "bio": "Interesse em ciências da computação."},
-    {"name": "Martin Cailler", "country": "França", "role": "Estudante", "bio": "Apaixonado por biologia."},
-    {"name": "Anaïs Guibert", "country": "França", "role": "Estudante", "bio": "Focado em engenharia."},
-    {"name": "Camille Gauthier", "country": "França", "role": "Estudante", "bio": "Interesse em literatura."},
+    {"name": "Clara Boissinot", "country": "França", "role": "Estudante", "bio": "..."},
+    {"name": "Martin Cailler", "country": "França", "role": "Estudante", "bio": "..."},
+    {"name": "Anaïs Guibert", "country": "França", "role": "Estudante", "bio": "..."},
+    {"name": "Camille Gauthier", "country": "França", "role": "Estudante", "bio": "..."},
 
-    {"name": "Gabriela Stefany Silva Gomes", "country": "Brasil", "role": "Estudante", "bio": "Interesse em ciências da computação."},
-    {"name": "Amanda Guimarães Gomes", "country": "Brasil", "role": "Estudante", "bio": "Apaixonado por biologia."},
-    {"name": "Rogério Brandão Bitarães Rocha", "country": "Brasil", "role": "Estudante", "bio": "Focado em engenharia."},
-    {"name": "João Pedro Braz Santos", "country": "Brasil", "role": "Estudante", "bio": "Interesse em literatura."}
+    {"name": "Gabriela Stefany Silva Gomes", "country": "Brasil", "role": "Estudante", "bio": "..."},
+    {"name": "Amanda Guimarães Gomes", "country": "Brasil", "role": "Estudante", "bio": "..."},
+    {"name": "Rogério Brandão Bitarães Rocha", "country": "Brasil", "role": "Estudante", "bio": "..."},
+    {"name": "João Pedro Braz Santos", "country": "Brasil", "role": "Estudante", "bio": "..."}
 ]
 
 st.header("Professores")
