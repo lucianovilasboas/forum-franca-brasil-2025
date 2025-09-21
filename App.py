@@ -65,7 +65,7 @@ pg = st.navigation(
         "Home": [principal,forum, programacao, ods],
         "Agua": [agua_home, agua_equipes, agua_links, agua_coleta_dados],
         "Carbono": [carbono_home, carbono_equipes,carbono_links, carbono_coleta_dados],
-        "Tools": [carbon_calc_br, carbon_calc2_br, carbon_calc_fr, carbon_calc2_fr, monitor, simulacao, curupira],
+        "Tools": [carbon_calc_br, carbon_calc2_br, carbon_calc_fr, carbon_calc2_fr, monitor, simulacao],
     }
 )
     
