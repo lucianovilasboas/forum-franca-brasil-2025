@@ -9,7 +9,7 @@ st.subheader("🔗 Fontes e ferramentas úteis")
 st.markdown("""
 - [Electricity Maps](https://app.electricitymaps.com)
 - [ONU - Objetivos de Desenvolvimento Sustentável](https://brasil.un.org/pt-br/sdgs)  
-- [ONU - Mudanças Climáticas](https://www.un.org/climate-change)  
+- [ONU - Mudanças Climáticas](https://www.un.org/en/)  
 - [WWF - Calculadora de Pegada de Carbono](https://www.wwf.org.br/natureza_brasileira/reducao_de_impactos2/pegada_ecologica/)  
 - [Global Footprint Network](https://www.footprintnetwork.org/)
 """)
