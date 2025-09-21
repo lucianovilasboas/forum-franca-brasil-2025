@@ -47,11 +47,11 @@ carbono_links = st.Page("carbono/Links2.py", title="Links", icon="🔗")
 carbono_coleta_dados = st.Page("carbono/Coleta_Dados2.py", title="Coleta de Dados", icon="📊")
 
 
-carbon_calc_br = st.Page("tools/Calculadora_Carbono_br.py", title="🇧🇷 Calculadora de Carbono Individual", icon="🧮")
-carbon_calc_fr = st.Page("tools/Calculadora_Carbono_fr.py", title="🇫🇷 Calculadora de Carbono Individual", icon="🧮")
+carbon_calc_br = st.Page("tools/Calculadora_Carbono_br.py", title="🇧🇷 Calculadora de Carbono", icon="🔢")
+carbon_calc_fr = st.Page("tools/Calculadora_Carbono_fr.py", title="🇫🇷 Calculateur de Carbone", icon="🔢")
 
-carbon_calc2_br = st.Page("tools/Calculadora_Carbono2_br.py", title="🇧🇷 Calculadora de Carbono Escolar", icon="🧮")
-carbon_calc2_fr = st.Page("tools/Calculadora_Carbono2_fr.py", title="🇫🇷 Calculadora de Carbono Escolar", icon="🧮")
+carbon_calc2_br = st.Page("tools/Calculadora_Carbono2_br.py", title="🇧🇷 Calculadora de Carbono da Escola", icon="🔢")
+carbon_calc2_fr = st.Page("tools/Calculadora_Carbono2_fr.py", title="🇫🇷 Calculatrice de Carbone de l'École", icon="🔢")
 
 monitor_sustentabilidade = st.Page("tools/Acoes_Sustentabilidade.py", title="Ações de Sustentabilidade", icon="🌍")
 simulacao_10anos = st.Page("tools/Simulacao.py", title="Simulação de Pegada de Carbono", icon="📈")
