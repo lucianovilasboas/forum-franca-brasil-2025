@@ -12,10 +12,11 @@ st.markdown("""
 - [ONU - Mudanças Climáticas](https://www.un.org/en/)  
 - [WWF - Calculadora de Pegada de Carbono](https://www.wwf.org.br/natureza_brasileira/reducao_de_impactos2/pegada_ecologica/)  
 - [Global Footprint Network](https://www.footprintnetwork.org/)
+- [National Geographic - Antártida Verde](https://www.nationalgeographicbrasil.com/meio-ambiente/2025/08/a-antartida-ja-foi-verde-e-possui-lagos-de-lava-descubra-6-curiosidades-surpreendentes-sobre-o-continente-gelado)
 """)
 
 
-st.subheader("🔗 Links de ONGS e Iniciativas")
+st.subheader("🔗 Links de ONGs e Iniciativas")
 st.markdown("""
 - [Iracambi](https://iracambi.com/pt-br/quem-somos/historia/)
 """)

@@ -53,6 +53,9 @@ carbon_calc_fr = st.Page("tools/Calculadora_Carbono_fr.py", title="🇫🇷 Calc
 carbon_calc2_br = st.Page("tools/Calculadora_Carbono2_br.py", title="🇧🇷 Calculadora de Carbono da Escola", icon="🔢")
 carbon_calc2_fr = st.Page("tools/Calculadora_Carbono2_fr.py", title="🇫🇷 Calculatrice de Carbone de l'École", icon="🔢")
 
+
+carbon_calc3_br = st.Page("tools/Calculadora_Carbono3_br.py", title="🇧🇷 Calculadora de Carbono Individual Avançada", icon="🔢")
+
 monitor_sustentabilidade = st.Page("tools/Acoes_Sustentabilidade.py", title="Ações de Sustentabilidade", icon="🌍")
 simulacao_10anos = st.Page("tools/Simulacao.py", title="Simulação de Pegada de Carbono", icon="📈")
 curupira_ia = st.Page("tools/Curupira.py", title="Curupira", icon="🪵")
@@ -65,7 +68,7 @@ pg = st.navigation(
         "Home": [principal,forum, programacao, ods],
         "Agua": [agua_home, agua_equipes, agua_links, agua_coleta_dados],
         "Carbono": [carbono_home, carbono_equipes,carbono_links, carbono_coleta_dados],
-        "Tools": [carbon_calc_br, carbon_calc_fr, carbon_calc2_br, carbon_calc2_fr, simulacao_10anos, monitor_sustentabilidade],
+        "Tools": [carbon_calc_br, carbon_calc_fr, carbon_calc2_br, carbon_calc2_fr, simulacao_10anos, monitor_sustentabilidade, carbon_calc3_br],
     }
 )
     

@@ -11,10 +11,3 @@ st.markdown("""
 - [Python](https://www.python.org)
 """)
 
-st.sidebar.title("Navegação")
-st.sidebar.markdown("""
-- [Google](https://www.google.com)
-- [GitHub](https://www.github.com)
-- [Stack Overflow](https://stackoverflow.com)
-- [Python](https://www.python.org)
-""")
