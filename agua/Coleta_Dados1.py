@@ -67,7 +67,7 @@ st.markdown(f"""
 """)
 
 # ---------------------------------------
-# Gráfico interativo Plotly
+# Gráfico interativo Plotly - Corrigido
 # ---------------------------------------
 st.subheader("🌧️ Gráfico de Pluviometria e Vazão")
 
@@ -79,7 +79,7 @@ fig.add_trace(go.Bar(
     y=df["Pluviometria (mm)"],
     name="Pluviometria (mm)",
     marker_color="royalblue",
-    yaxis="y1",
+    yaxis="y",
     hovertemplate="<b>Mês</b>: %{x}<br><b>Pluviometria</b>: %{y} mm<extra></extra>"
 ))
 
@@ -103,16 +103,16 @@ fig.update_layout(
         title="Pluviometria (mm)",
         titlefont=dict(color="royalblue"),
         tickfont=dict(color="royalblue"),
-        side="left"
     ),
     yaxis2=dict(
         title="Vazão (m³/s)",
         titlefont=dict(color="red"),
         tickfont=dict(color="red"),
+        anchor="x",
         overlaying="y",
         side="right"
     ),
-    legend=dict(x=0.5, y=1.1, orientation="h", xanchor="center"),
+    legend=dict(x=0.5, y=1.15, orientation="h", xanchor="center"),
     bargap=0.3,
     template="plotly_white",
     hovermode="x unified",
@@ -121,6 +121,7 @@ fig.update_layout(
 
 # Exibir gráfico no Streamlit
 st.plotly_chart(fig, use_container_width=True)
+
 
 # ---------------------------------------
 # Gráfico de Volumes Escoados
