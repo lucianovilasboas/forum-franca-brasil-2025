@@ -152,7 +152,8 @@ fig2.update_layout(
     yaxis=dict(title="Volume (m³)"),
     template="plotly_white",
     barmode="group",
-    height=600
+    height=600,
+    legend=dict(x=0.5, y=1.15, orientation="h", xanchor="center")
 )
 
 st.plotly_chart(fig2, use_container_width=True)
