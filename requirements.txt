@@ -1,7 +1,9 @@
 matplotlib
 numpy
-plotly
+plotly=5.24.1
 streamlit
 scipy
 openai
 google-generativeai
+pandas
+openpyxl
