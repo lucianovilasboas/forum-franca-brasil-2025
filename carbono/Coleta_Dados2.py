@@ -249,6 +249,11 @@ if "DAP2xL" in df_mortas_caidas.columns:
                              title="Contribuição relativa por peça (DAP2xL) — Mortas Caídas")
     
     fig_treemap.update_traces(textinfo="label+value+percent parent")
+    
+    fig_treemap.update_layout(
+        title_font_size=20,
+        font=dict(size=30)
+    )
 
     st.plotly_chart(fig_treemap, use_container_width=True)
 
