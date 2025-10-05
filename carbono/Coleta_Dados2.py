@@ -14,6 +14,11 @@ st.info("Este painel mostra os dados e cálculos relacionados ao carbono estocad
 # =====================
 st.markdown("## 📄 Dados coletados")
 
+st.markdown("""
+        **DAP** = Diâmetro à Altura do Peito, medido a 1,30 m do solo.  
+        Esta medida é utilizada para estimar o volume e biomassa das árvores.
+""")
+
 data_vivas = [
     {'DAP arvores vivas': 3.0, 'Quantidade de matéria vegetal': 16.11078769},
     {'DAP arvores vivas': 3.0, 'Quantidade de matéria vegetal': 16.11078769},
