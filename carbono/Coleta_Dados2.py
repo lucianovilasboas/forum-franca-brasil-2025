@@ -12,7 +12,7 @@ st.info("Este painel mostra os dados e cálculos relacionados ao carbono estocad
 # =====================
 # Dados brutos (EMBUTIDOS)
 # =====================
-st.markdown("## 📄 Dados coletados (embutidos no código)")
+st.markdown("## 📄 Dados coletados")
 
 data_vivas = [
     {'DAP arvores vivas': 3.0, 'Quantidade de matéria vegetal': 16.11078769},
@@ -140,8 +140,11 @@ st.markdown("### 2️⃣ Conversão de Carbono em Dióxido de Carbono Equivalent
 st.latex(r"""
 CO_{2e} = C \times \frac{44}{12}
 """)
-st.markdown("""
-O fator estequiométrico \\( \\tfrac{44}{12} \\approx 3{,}67 \\) decorre da relação entre as massas molares 
+st.markdown("""O fator estequiométrico""")
+
+st.latex(r"""\tfrac{44}{12} \approx 3{,}67""") 
+            
+st.markdown("""decorre da relação entre as massas molares 
 do dióxido de carbono (CO₂) e do carbono (C):  
 - Massa molar do CO₂ = 44 g/mol  
 - Massa molar do C = 12 g/mol  
@@ -244,6 +247,9 @@ if "DAP2xL" in df_mortas_caidas.columns:
     df_mc["Índice (DAP2xL normalizado)"] = df_mc["DAP2xL"] / df_mc["DAP2xL"].sum()
     fig_treemap = px.treemap(df_mc, path=["DAP"], values="DAP2xL",
                              title="Contribuição relativa por peça (DAP2xL) — Mortas Caídas")
+    
+    fig_treemap.update_traces(textinfo="label+value+percent parent")
+
     st.plotly_chart(fig_treemap, use_container_width=True)
 
 st.markdown("""
