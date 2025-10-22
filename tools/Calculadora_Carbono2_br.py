@@ -17,7 +17,6 @@ Esta ferramenta estima a **pegada de carbono anual (t CO₂e/ano)** da sua escol
 - Transporte institucional
 - Consumo de energia e água
 - Geração de resíduos
-- Número de pessoas (funcionários e estudantes)
 - Infraestrutura física
 - Compensações (plantio de árvores)
 
@@ -47,12 +46,12 @@ with col3:
     consumo_combustivel = st.number_input("Consumo mensal de combustível (litros)", min_value=0.0, step=0.1)
 
 # Pessoas
-st.subheader("👩‍🏫 Pessoas")
-col1, col2 = st.columns(2)
-with col1:
-    num_funcionarios = st.number_input("Número de funcionários", min_value=0, step=1)
-with col2:
-    num_estudantes = st.number_input("Número de estudantes", min_value=0, step=1)
+#st.subheader("👩‍🏫 Pessoas")
+#col1, col2 = st.columns(2)
+#with col1:
+#    num_funcionarios = st.number_input("Número de funcionários", min_value=0, step=1)
+#with col2:
+#    num_estudantes = st.number_input("Número de estudantes", min_value=0, step=1)
 
 # Infraestrutura
 st.subheader("🏫 Infraestrutura")
@@ -130,8 +129,8 @@ if st.button("Calcular Pegada de Carbono"):
     emissao_lixo = volume_lixo * fator_lixo * 12
 
     # Pessoas
-    total_pessoas = num_funcionarios + num_estudantes
-    emissao_pessoas = total_pessoas * fator_pessoa
+    #total_pessoas = num_funcionarios + num_estudantes
+    #emissao_pessoas = total_pessoas * fator_pessoa
 
     # Infraestrutura
     emissao_infra = (
@@ -143,7 +142,7 @@ if st.button("Calcular Pegada de Carbono"):
 
     # --- Total e compensação ---
     emissao_total_kg = (emissao_transporte + emissao_energia + emissao_agua +
-                        emissao_lixo + emissao_pessoas + emissao_infra)
+                        emissao_lixo +  emissao_infra)
 
     emissao_total_t = emissao_total_kg / 1000  # toneladas
 
@@ -162,12 +161,11 @@ if st.button("Calcular Pegada de Carbono"):
     data = {
         "Setor": [
             "Transporte", "Energia", "Água", "Lixo",
-            "Pessoas (funcionários + estudantes)",
             "Infraestrutura"
         ],
         "Emissões (kg CO₂e/ano)": [
             emissao_transporte, emissao_energia, emissao_agua,
-            emissao_lixo, emissao_pessoas, emissao_infra
+            emissao_lixo, emissao_infra
         ]
     }
     df = pd.DataFrame(data)
@@ -199,7 +197,6 @@ if st.button("Calcular Pegada de Carbono"):
     - **Nome da Escola:** {nome_escola}
     - **Município:** {municipio_escola}
     - **País:** {pais}
-    - **Total de pessoas:** {total_pessoas} (Funcionários: {num_funcionarios}, Estudantes: {num_estudantes})
     - **Emissões totais (sem compensação):** {emissao_total_t:.2f} t CO₂e/ano
     - **Compensação por árvores:** {compensacao_kg/1000:.2f} t CO₂e/ano
     - **Emissões líquidas:** {emissao_liquida_t:.2f} t CO₂e/ano
