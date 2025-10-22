@@ -17,7 +17,6 @@ Cet outil estime **l'empreinte carbone annuelle (t CO₂e/an)** de votre école 
 - Transport institutionnel
 - Consommation d'énergie et d'eau
 - Production de déchets
-- Nombre de personnes (personnel et étudiants)
 - Infrastructure physique
 - Compensation (plantation d'arbres)
 
@@ -47,12 +46,12 @@ with col3:
     consumo_combustivel = st.number_input("Consommation mensuelle de carburant (litres)", min_value=0.0, step=0.1)
 
 # Personnes
-st.subheader("👩‍🏫 Personnes")
-col1, col2 = st.columns(2)
-with col1:
-    num_funcionarios = st.number_input("Nombre de membres du personnel", min_value=0, step=1)
-with col2:
-    num_estudantes = st.number_input("Nombre d'étudiants", min_value=0, step=1)
+#st.subheader("👩‍🏫 Personnes")
+#col1, col2 = st.columns(2)
+#with col1:
+#    num_funcionarios = st.number_input("Nombre de membres du personnel", min_value=0, step=1)
+#with col2:
+#    num_estudantes = st.number_input("Nombre d'étudiants", min_value=0, step=1)
 
 # Infrastructure
 st.subheader("🏫 Infrastructure")
@@ -124,8 +123,8 @@ if st.button("Calculer l'Empreinte Carbone"):
     emissao_lixo = volume_lixo * fator_lixo * 12
 
     # Personnes
-    total_pessoas = num_funcionarios + num_estudantes
-    emissao_pessoas = total_pessoas * fator_pessoa
+   # total_pessoas = num_funcionarios + num_estudantes
+   # emissao_pessoas = total_pessoas * fator_pessoa
 
     # Infrastructure
     emissao_infra = (
@@ -137,7 +136,7 @@ if st.button("Calculer l'Empreinte Carbone"):
 
     # --- Total et compensation ---
     emissao_total_kg = (emissao_transporte + emissao_energia + emissao_agua +
-                        emissao_lixo + emissao_pessoas + emissao_infra)
+                        emissao_lixo + emissao_infra)
 
     emissao_total_t = emissao_total_kg / 1000  # tonnes
 
@@ -156,12 +155,11 @@ if st.button("Calculer l'Empreinte Carbone"):
     data = {
         "Secteur": [
             "Transport", "Énergie", "Eau", "Déchets",
-            "Personnes (personnel + étudiants)",
             "Infrastructure"
         ],
         "Émissions (kg CO₂e/an)": [
             emissao_transporte, emissao_energia, emissao_agua,
-            emissao_lixo, emissao_pessoas, emissao_infra
+            emissao_lixo, emissao_infra
         ]
     }
     df = pd.DataFrame(data)
@@ -193,7 +191,6 @@ if st.button("Calculer l'Empreinte Carbone"):
     - **Nom de l'école :** {nome_escola}
     - **Commune :** {municipio_escola}
     - **Pays :** {pais}
-    - **Total de personnes :** {total_pessoas} (Personnel : {num_funcionarios}, Étudiants : {num_estudantes})
     - **Émissions totales (sans compensation) :** {emissao_total_t:.2f} t CO₂e/an
     - **Compensation par les arbres :** {compensacao_kg/1000:.2f} t CO₂e/an
     - **Émissions nettes :** {emissao_liquida_t:.2f} t CO₂e/an
